@@ -13,10 +13,18 @@
 </head>
 
 <body>
-  <h1 class="contacto-top">Contacto</h1>
-  <a href="/index.html">Inicio</a>
-  <a href="/sobre-mi.html">Sobre mi</a>
-  <a href="/proyecto.html">Acerca del proyecto</a>
+  <h1 class="move-content-down" class="contacto-top">Contacto</h1>
+  <header class="header">
+    <div class="header-name">
+      <h3 class="name">PAULINA RENDON</h3>
+      <p class="role">FRONTEND DEVELOPER</p>
+    </div>
+    <nav class="header-nav">
+      <a href="./sobre-mi.html">Sobre mí</a>
+      <a href="./proyecto.html">Acerca del proyecto</a>
+      <a href="./contacto.html">Contacto</a>
+    </nav>
+  </header>
 
   <form id="contacto" class="contacto">
     <label for="nombre">Nombre:</label>
@@ -38,7 +46,9 @@
     <label for="conentario">Deja un comentario</label>
     <input type="text" />
     <br>
-    <input type="submit" value="Enviar"> <input type="reset" value="Borrar todo">
+    <input class="enviar-button" type="submit" value="Enviar">
+    <input class="borrar-button" type="reset" value="Borrar todo">
+   
   </form>
 </body>
 
