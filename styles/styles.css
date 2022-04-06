@@ -269,3 +269,16 @@ border-radius: 50%;
   color: #FFFFFF;
   border: 1px solid #074df5;
 }
+.proyectos {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.project_img {
+width: 10px;
+display: flex;
+position: relative;
+align-content: flex-end;
+}

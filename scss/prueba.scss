@@ -1,5 +1,44 @@
 /*VARIABLES*/
 
-$color-principal:#e6dacd
+$color-principal:#e6dacd;
+
+$breakpoints: (
+    xs: 0px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
 
 
+@mixin media-up($breakpoints) {
+    @media screen and (min-width: map-get($breakpoints)) {    
+    @content;
+}
+    
+}
+.profile-container{
+    @include media-up(lg){
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+}
+.profile-container{
+    @include media-up(md){
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+}
+.profile-container{
+    @include media-up(sm){
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+}
+.profile-container{
+    @include media-up(xs){
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+}
