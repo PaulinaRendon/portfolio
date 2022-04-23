@@ -254,7 +254,8 @@ h1, h2, h3 {
 
 .proyectos {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #e6dacd; }
 
 .project_img {
   width: 250px;
@@ -264,12 +265,15 @@ h1, h2, h3 {
   align-content: flex-end; }
 
 .topnav {
-  overflow: hidden;
   background-color: #333;
   position: relative; }
 
 .topnav #myLinks {
-  display: none; }
+  display: none;
+  background-color: #000000;
+  position: absolute;
+  top: 50px;
+  right: 0px; }
 
 .topnav a {
   color: white;
@@ -285,29 +289,26 @@ h1, h2, h3 {
   right: 0;
   top: 0; }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black; }
-
-.active {
-  background-color: #04AA6D;
-  color: white; }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .proyectos {
     flex-direction: column; }
   .header-nav {
     display: none; }
   .header-nav-mobile {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     margin-right: 35px; }
-  .topnav #myLinks {
-    display: block; } }
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (min-width: 601px) {
   .header-nav {
     display: flex; }
   .header-nav-mobile {
-    display: none; } }
+    display: none; }
+  .profile-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; } }

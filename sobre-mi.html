@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -24,6 +25,20 @@
       <a href="./proyecto.html">Acerca del proyecto</a>
       <a href="./contacto.html">Contacto</a>
     </nav>
+
+    <div class= "header-nav-mobile">
+      <div class="topnav">
+        <div id="myLinks">
+          <a href="./index.html">Home</a>
+          <a href="./proyecto.html">Acerca del proyecto</a>
+          <a href="./contacto.html">Contacto</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
   </header>
   <div class="info-sobre-mi move-content-down">
       <h1>Sobre mí</h1>
@@ -50,6 +65,17 @@
         </div> 
       </div>
   </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+
 </body>
 
 </html>
